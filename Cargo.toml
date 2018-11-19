@@ -1,0 +1,17 @@
+[package]
+name = "talk"
+version = "0.0.0"
+authors = ["Tshepang Lekhonkhobe <tshepang@gmail.com>"]
+
+[dependencies]
+hifive = { path = "../riscv-crates/hifive" }
+
+[profile.dev]
+incremental = false
+lto = false
+debug = false
+
+[profile.release]
+incremental = false
+lto = false
+debug = false
